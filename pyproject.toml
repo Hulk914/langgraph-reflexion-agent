@@ -1,0 +1,25 @@
+[project]
+name = "reflexion-agent"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { email = "ayushthakur2009@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "black>=26.10.1",
+    "isort>=9.0.2",
+    "langchain>=1.5.2",
+    "langchain-google-genai>=4.5.2",
+    "langchain-tavily>=0.2.18",
+    "langgraph>=1.2.24",
+    "python-dotenv>=1.2.4",
+]
+
+[project.scripts]
+reflexion-agent = "reflexion_agent:main"
+
+[build-system]
+requires = ["uv_build>=0.13.8,<0.14.0"]
+build-backend = "uv_build"
